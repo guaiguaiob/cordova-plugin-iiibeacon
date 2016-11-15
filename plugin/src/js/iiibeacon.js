@@ -38,5 +38,5 @@ iiibeacon.bluetoothState = function(success, error)
 	return true;
 };
 
-iiibeacon.beacons.printObject = iiibeacon.printObject;
+//iiibeacon.beacons.printObject = iiibeacon.printObject;
 
