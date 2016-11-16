@@ -24,6 +24,8 @@
     </config-file>
 
     <source-file src="src/android/iiibeacon.java" target-dir="src/com/tagfans/plugin/"/>
+    <source-file src="src/android/beaconcontentsdk_v2.5.jar" target-dir="libs" />
+    <source-file src="src/android/gson-2.2.4.jar" target-dir="libs" />
   </platform>
 
 </plugin>
