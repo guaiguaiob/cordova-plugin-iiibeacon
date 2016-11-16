@@ -1,1 +1,1 @@
-# iiibeacon
+# cordova-plugin-iiibeacon
