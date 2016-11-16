@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.tagfans.iiibeaconplugin"
+        version="0.1.0">
+
+  <name>iiibeacon</name>
+  <description>Cordova plugin for iiibeacon</description>
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/iiibeacon.js" target="js/iiibeacon.js"/>
+
+  <js-module src="www/iiibeacon.js" name="iiibeacon">
+    <clobbers target="iiibeacon" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="iiibeacon">
+        <param name="android-package" value="com.tagfans.plugin.iiibeacon"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/iiibeacon.java" target-dir="src/com/tagfans/plugin/"/>
+  </platform>
+
+</plugin>
